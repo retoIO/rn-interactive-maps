@@ -1,3 +1,14 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "jsx": "react-native"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
